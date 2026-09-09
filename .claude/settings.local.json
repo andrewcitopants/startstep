@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(npm run *)",
+      "Bash(pkill -f \"next-server\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -X POST http://localhost:3000/api/first-step -H \"Content-Type: application/json\" -d '{\"task\":\"clean my inbox\"}')",
+      "Bash(taskkill //PID 18224 //F)"
+    ]
+  }
+}
